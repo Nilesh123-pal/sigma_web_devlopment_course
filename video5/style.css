@@ -3,4 +3,9 @@ body
 background-color: blue;
 color: rgb(123, 255, 0);
 
+td 
+{
+
+    border: 2px solid black;
 }
+
