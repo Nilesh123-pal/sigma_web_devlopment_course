@@ -10,42 +10,84 @@
 <body>
     <div>
         <h4>REQUIRED-DOCUMENTS</h4>
-        <h5>note:2 documents nessesary</h5> 
-        <label for="ADHAR-CARD">ADHAR-CARD </label>
-        <input type="checkbox" id="ADHAR-CARD" name="ADHAR-CARD" placeholder="ADHAR-CARD">
-        <br>
+        <form target="_blank" action="img/form3.html">
+            <h5>note:2 documents nessesary</h5>
+            <label for="ADHAR-CARD">ADHAR-CARD </label>
+            <input type="checkbox" id="ADHAR-CARD" name="ADHAR-CARD" placeholder="ADHAR-CARD">
+            <br>
 
-        <label for="PAN-CARD">PAN-CARD </label>
-        <input type="checkbox" id="PAN-CARD" name="PAN-CARD" placeholder="PAN-CARD">
-        <br>
-        <label for="DRIVING-LICENCE">DRIVING-LICENCE</label>
-        <input type="checkbox" id="DRIVING-LICENCE" name="DRIVING-LICENCE" placeholder="DRIVING-LICENCE">
+            <label for="PAN-CARD">PAN-CARD </label>
+            <input type="checkbox" id="PAN-CARD" name="PAN-CARD" placeholder="PAN-CARD">
+            <br>
+            <label for="DRIVING-LICENCE">DRIVING-LICENCE</label>
+            <input type="checkbox" id="DRIVING-LICENCE" name="DRIVING-LICENCE" placeholder="DRIVING-LICENCE">
 
-        <br>
-        <label for="BANK-PASSBOOK">BANK-PASSBOOK</label>
-        <input type="checkbox" id="BANK-PASSBOOK" name="BANK-PASSBOOK" placeholder="BANK-PASSBOOK">
+            <br>
+            <label for="BANK-PASSBOOK">BANK-PASSBOOK</label>
+            <input type="checkbox" id="BANK-PASSBOOK" name="BANK-PASSBOOK" placeholder="BANK-PASSBOOK">
 
     </div>
 
     <div>
         <h3>RELATION</h3>
         <label for="FATHER NAME">*FATHER NAME</label>
-        <input type="text" id="FATHER NAME" name="FATHER NAME" placeholder="FATHER NAME" required>
+        <input type="text" id="FATHER NAME" name="FATHER NAME" placeholder="FATHER NAME" required autofocus pattern="[A-Za-z]">
         <br>
 
         <label for="MOTHER NAME">*MOTHER NAME</label>
-        <input type="text" id="MOTHER NAME" name="MOTHER NAME" placeholder="MOTHER NAME" required>
+        <input type="text" id="MOTHER NAME" name="MOTHER NAME" placeholder="MOTHER NAME" required autofocus pattern="[A-Za-z]">
 
         <br>
 
         <label for="SIBLINGS ">SIBLINGS BRO/SIS</label>
-        <input type="text" id="SIBLINGS " name="SIBLINGS  " placeholder="SIBLINGS" c>
+        <input type="text" id="SIBLINGS " name="SIBLINGS  " placeholder="SIBLINGS" pattern="[A-Za-z]">
+        <br>
+        <hr>
 
 
 
     </div>
+    <div>
+        <label for="comment"><i><b>COMMENT</b></i></label>
+        <textarea name="commnet" rows="4" cols="50"></textarea>
+    </div>
 
-   <h5>note:* fields are nessesary</h5> 
+    <hr>
+    <div>
+        <select name="fruits">
+
+            <option value="BLANK">BLANK</option>
+            <option value="ORANGE">ORANGE</option>
+            <option value="MANGO">MANGO</option>
+            <option value="APPLE">APPLE</option>
+        </select>
+    </div>
+    <hr>
+    <label for="D.O.B"><B>D.O.B </B><SUP><B>/DATE OF BIRTH</B></SUP></label>
+    <b><input type="date" name="Date" ID="DATE" placeholder="DATE" required></b>
+
+    
+    <h5>note:* fields are nessesary</h5>
+
+
+    <b><i><label for="comment">COMMENT</label></i></b>
+    <textarea name="comment" rows="4" cols="50"></textarea>
+    <hr>
+    <div>
+        <select name="MERA PYAR">
+            <option VALUES="BAUAA">BAUAA</option>
+            <option VALUES="BABY">BABY</option>
+            <option VALUES="JAAN">JAAN</option>
+            <option VALUES="SWEETHEART">SWEETHEART</option>
+            <option VALUES="CUTIEPIE">CUTIEPIE</option>
+
+        </select>
+        <div>
+            <input type="submit" id="submit" name="submit" placeholder="submit">
+        </div>
+    <div>
+    </form>
+</div>
 
 </body>
 
