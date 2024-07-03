@@ -8,18 +8,18 @@
 </head>
 
 <body>
-    <h1>YATRA.COM</h1>
-    <h4 style="color: rgb(54, 224, 20);">Book Tickets Online</h4>
+    <h1 id="main-heading" class="heading-style">YATRA.COM</h1>
+    <h4 style="color: rgb(79, 129, 69);">Book Tickets Online</h4>
    
     <form action="IRCTCRITS2.html">
         <label for="first name">FIRST NAME*</label>
-        <input type="text" id="first name" name="first name" placeholder="first name" required autofocus>
+        <input id="input" type="text" id="first name" name="first name" placeholder="first name" required autofocus>
         <br>
         <label for="last name">LAST NAME*</label>
-        <input type="text" id="last name" name="last name" placeholder="last name" required autofocus>
+        <input id="input" type="text" id="last name" name="last name" placeholder="last name" required autofocus>
         <br>
         <label for="FROM">From</label>
-        <select name="FROM">
+        <select class="select" name="FROM">
             <option value="-">-</option>
             <option value="KANPUR">KANPUR</option>
             <option value="DELHI">DELHI</option>
@@ -31,7 +31,7 @@
             <option value="GOA">GOA</option>
         </select>
         <label for="Destination">To</label>
-        <select name="To">
+        <select class="select" name="To">
             <option value="-">-</option>
             <option value="KANPUR">KANPUR</option>
             <option value="DELHI">DELHI</option>
@@ -43,12 +43,12 @@
             <option value="GOA">GOA</option>
         </select>
         <label for="date">Date</label>
-        <input type="date" id="date" name="date" placeholder="date">
+        <input  class="date"  type="date" id="date" name="date" placeholder="date">
         <hr>
         <div>
 
             <label for="ALL-CLASSES">ALL-CLASSES*</label>
-            <select name="ALL-CLASSES" required>
+            <select class="select"  name="ALL-CLASSES" required>
                 <option value="-">-</option>
                 <option value="GENERAL">GENERAL</option>
                 <option value="DELUX">DELUX</option>
@@ -60,15 +60,15 @@
         </div>
         <hr>
         <div>
-            <labelfor="DIVYANG-QUOTA">DIVYANG-QUOTA<label>
-                    <input type="checkbox">
+            <label for="DIVYANG-QUOTA">DIVYANG-QUOTA<label>
+                    <input id="input" type="checkbox">
         </div>
 
         <hr>
         <div>
-            <h3>PASSENGERS</h3>
+            <h3 id="sec-main-heading" class="sec-main-heading-style">PASSENGERS</h3>
             <label for="MALE">MALE</label>
-            <select name="MALE">MALE
+            <select class="select"  name="MALE">MALE
                 <option value="-">-</option>
                 <option value="0">0</option>
                 <option value="1">1</option>
@@ -82,7 +82,7 @@
 
         <div>
             <label for="FEMALE">FEMALE</label>
-            <select name="FEMALE">FEMALE
+            <select class="select"  name="FEMALE">FEMALE
                 <option value="-">-</option>
                 <option value="0">0</option>
                 <option value="1">1</option>
@@ -96,7 +96,7 @@
 
         <div>
             <label for="CHILDRENS">CHILDRENS</label>
-            <select name="CHILDRENS">CHILDRENS
+            <select class="select" name="CHILDRENS">CHILDRENS
                 <option value="-">-</option>
                 <option value="0">0</option>
                 <option value="1">1</option>
@@ -110,7 +110,7 @@
 
         <div>
             <label for="SENIOR-CITIZENS">SENIOR-CITIZENS</label>
-            <select name="SENIOR-CITIZENS">SENIOR-CITIZENS
+            <select class="select"  name="SENIOR-CITIZENS">SENIOR-CITIZENS
                 <option value="-">-</option>
                 <option value="0">0</option>
                 <option value="1">1</option>
@@ -129,17 +129,18 @@
         </div>
         <div>
 
-            <video src="video.mp4" height="200">error</video>
+            <video src="video.mp4" height="200" id="video" >error</video>
         </div>
 
         <div>
-            <input type="submit" id="submit" name="submit" placeholder="submit" style="font-style: oblique; background-color: darkgreen;">
+            <input id="submit" type="submit" id="submit" name="submit" placeholder="submit">
         </div>
 
         <h5>note-*field is required</h5>
 
 
     </form>
+    <link rel="stylesheet" href="style2.css">
 </body>
 
 </html>

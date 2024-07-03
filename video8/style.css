@@ -1,0 +1,65 @@
+.red
+{
+    color: red;
+}
+    .bg-yellow 
+    {
+        background-color: rgb(220, 235, 9);
+    }
+
+
+
+.green
+{
+    color: rgb(4, 235, 4);
+}
+
+.bg-pink
+{
+    background-color: plum;
+}
+
+/* #firstp */
+{
+    color: blue;
+    background-color: chartreuse;
+}
+
+
+#second-div 
+  {
+    background-color: rgb(94, 255, 0);
+    color: rgb(13, 207, 29);
+  }  
+
+  .pink 
+  {
+    color: pink;
+  }
+
+  .bg-orange
+  {
+    background-color: darkorange;
+  }
+
+  #main-heading
+  {
+    color: chartreuse;
+    background-color: rgb(238, 83, 11);
+  }
+
+  .sub-heading
+  {
+    color: aquamarine;
+    background-color: blue;
+  }
+
+  #sec-main-heading
+  {
+    color: chartreuse;
+  }
+
+  .heading-style
+  {
+    text-align: center; font-size: 36px; background-color: black;
+  }
