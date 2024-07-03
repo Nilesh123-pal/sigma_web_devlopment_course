@@ -1,65 +1,31 @@
-.red
-{
-    color: red;
-}
-    .bg-yellow 
-    {
-        background-color: rgb(220, 235, 9);
-    }
+ body
+ {
+  background-color: rgb(235, 235, 243);
+ }
+
+ #main-heading
+ {
+  color: darkslategrey;
+ }
+
+ .heading-style
+ {
+  background-color: rgb(148, 170, 170); text-align: center;
+ }
+ p
+ {
+  text-shadow: gold; color: dimgray; text-align-last: left;
+ }
 
 
 
-.green
-{
-    color: rgb(4, 235, 4);
-}
+ h2
+ {
+  color: rgb(53, 116, 116);
+ }
 
-.bg-pink
-{
-    background-color: plum;
-}
+ td
+ {
 
-/* #firstp */
-{
-    color: blue;
-    background-color: chartreuse;
-}
-
-
-#second-div 
-  {
-    background-color: rgb(94, 255, 0);
-    color: rgb(13, 207, 29);
-  }  
-
-  .pink 
-  {
-    color: pink;
-  }
-
-  .bg-orange
-  {
-    background-color: darkorange;
-  }
-
-  #main-heading
-  {
-    color: chartreuse;
-    background-color: rgb(238, 83, 11);
-  }
-
-  .sub-heading
-  {
-    color: aquamarine;
-    background-color: blue;
-  }
-
-  #sec-main-heading
-  {
-    color: chartreuse;
-  }
-
-  .heading-style
-  {
-    text-align: center; font-size: 36px; background-color: black;
-  }
+  border: 10px solid black;
+ }

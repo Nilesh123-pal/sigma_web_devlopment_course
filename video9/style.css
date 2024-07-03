@@ -1,0 +1,24 @@
+body
+{
+    background-color: rgb(41, 34, 34);
+}
+
+sup
+{
+    text-align-last: right;
+}
+
+#search
+{
+    color: rgb(51, 45, 45); background-color: darkgrey; border-style: ridge;
+}
+
+label
+{
+    color: rgb(0, 0, 0); size: 5px; border: 2px;
+}
+
+iframe
+{
+      border-block-end-width: 5px; border-style: hidden; border-color: darkslategrey;
+}
