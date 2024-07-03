@@ -1,1 +1,1 @@
-Follow ny codes.
+Follow my codes.
