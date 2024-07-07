@@ -7,7 +7,7 @@ body
     {
     border: 2px solid black;
     background-color: dimgrey;
-    -webkit-text-fill-color: cyan;
+    -webkit-text-fill-color: cyan; color: blanchedalmond;
     }
 
 h1
