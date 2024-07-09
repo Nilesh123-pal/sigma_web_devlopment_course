@@ -41,10 +41,43 @@ label
 
 #submit
 {
-    border-color: ivory; font-size: medium; color: rgb(255, 255, 255); background-color: rgb(75, 119, 8); border-style: groove;
+   
+    background-color: #42AE0F;  border-radius: 10px; /
+    padding: 5px 15px; font-size: larger;  margin-top: 10px;
 }
 
 #video
 {
     border: 4px solid blue 
+}
+
+.text
+{
+    font-size: x-large; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+textarea
+{
+    border-radius: 10px; background-color: #ddf3d3;
+    padding: 5px 15px; font-size: larger; 
+}
+
+.fruits
+{
+   border-radius: 7px; background-color: rgb(241, 245, 245); color: rgb(12, 27, 228); margin-top: 10px;
+}
+
+#first-name
+{
+    margin-top: 1px; margin-bottom: 1px;
+}
+
+#last-name
+{
+    margin-top: 6px; margin-bottom: 6px;
+}
+
+.passengers
+{
+    margin-top: 3px; margin-bottom: 3px;
 }

@@ -13,10 +13,10 @@
    
     <form action="IRCTCRITS2.html">
         <label for="first name">FIRST NAME*</label>
-        <input id="input" type="text" id="first name" name="first name" placeholder="first name" required autofocus>
+        <input type="text" id="first-name" name="first name" placeholder="first name" required autofocus>
         <br>
         <label for="last name">LAST NAME*</label>
-        <input id="input" type="text" id="last name" name="last name" placeholder="last name" required autofocus>
+        <input type="text" id="last-name" name="last name" placeholder="last name" required autofocus>
         <br>
         <label for="FROM">From</label>
         <select class="select" name="FROM">
@@ -65,12 +65,12 @@
         </div>
 
         <hr>
-        <div>
+        <div class="passengers">
             <h3 id="sec-main-heading" class="sec-main-heading-style">PASSENGERS</h3>
             <label for="MALE">MALE</label>
             <select class="select"  name="MALE">MALE
                 <option value="-">-</option>
-                <option value="0">0</option>
+                <option value="0">0</option>  class="passengers"
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -80,9 +80,9 @@
             </select>
         </div>
 
-        <div>
-            <label for="FEMALE">FEMALE</label>
-            <select class="select"  name="FEMALE">FEMALE
+        <div class="passengers">
+            <label for="FEMALE" class="passengers">FEMALE</label>
+            <select class="select" >FEMALE
                 <option value="-">-</option>
                 <option value="0">0</option>
                 <option value="1">1</option>
@@ -94,9 +94,9 @@
             </select>
         </div>
 
-        <div>
-            <label for="CHILDRENS">CHILDRENS</label>
-            <select class="select" name="CHILDRENS">CHILDRENS
+        <div class="passengers">
+            <label for="CHILDRENS" class="passengers">CHILDRENS</label>
+            <select class="select">CHILDRENS
                 <option value="-">-</option>
                 <option value="0">0</option>
                 <option value="1">1</option>
@@ -108,9 +108,9 @@
             </select>
         </div>
 
-        <div>
-            <label for="SENIOR-CITIZENS">SENIOR-CITIZENS</label>
-            <select class="select"  name="SENIOR-CITIZENS">SENIOR-CITIZENS
+        <div class="passengers">
+            <label for="SENIOR-CITIZENS" class="passengers">SENIOR-CITIZENS</label>
+            <select class="select">SENIOR-CITIZENS
                 <option value="-">-</option>
                 <option value="0">0</option>
                 <option value="1">1</option>
@@ -132,15 +132,29 @@
             <video src="video.mp4" height="200" id="video" controls>error</video>
         </div>
 
-        <div>
-            <input type="submit" type="submit" id="submit" name="submit" placeholder="submit">
-        </div>
+       
 
         <h5>note-*field is required</h5>
 
 
     </form>
     <link rel="stylesheet" href="style2.css">
+    <label for="text" class="text"><b>comment</b></label>
+    <textarea name="text" rows="4"></textarea>
+<br>
+<label for="fruits">FRUITS</label>
+<select name="FRUITS" class="fruits">fruits
+    <option value="-">-</option>  
+<option value="orange">orange</option>
+<option value="apple">apple</option>  
+<option value="pinapple">pinapple</option>  
+<option value="apple">apple</option>  
+<option value="guava">guava</option>  
+</select>
+<br>
+<div>
+    <input type="submit" type="submit" id="submit" name="submit" placeholder="submit">
+</div>
 </body>
 
 </html>
