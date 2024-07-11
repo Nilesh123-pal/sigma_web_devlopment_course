@@ -1,0 +1,104 @@
+body
+{
+    background-color: rgb(32, 109, 172);
+  
+  
+}
+
+.box
+{
+    
+        background-color: rgb(208, 209, 205); margin-top:50px; box-sizing: border-box; text-align: right; padding-bottom: 1px; margin-left: 300px; margin-right: 300px; margin-bottom: -10px;
+}
+
+.fin{
+
+    padding-right: 20px; padding-top: 0px; margin-top: -38px; font-family: Arial, Helvetica, sans-serif; font-weight: 200;
+}
+
+.img
+{
+    margin-left: 0px; margin-right: 0px; padding-left: 20px;
+}
+.h2
+{
+
+    padding-right: 20px;
+}
+
+#password
+{
+    margin-right: 240px;
+}
+
+#UserId
+{
+    margin-right: 240px; 
+}
+.button
+{
+    margin-right: 338px; 
+}
+
+.h2{
+
+    font-family: Arial, Helvetica, sans-serif; font-weight: 100; 
+}
+
+.label
+{
+    font-family: Arial, Helvetica, sans-serif; font-weight: 200; 
+}
+
+h5
+{
+    font-family: Arial, Helvetica, sans-serif; font-weight: 150;  margin-right: 50px; height: 15px; margin-top: 10px;
+}
+
+a
+{
+    color: blue; 
+}
+
+a:hover
+{
+    background-color: rgb(169, 159, 179);
+}
+
+
+
+img{
+    padding-top: 4px; padding-bottom: 4px; padding-left: 4px; padding-right: 20px;
+}
+
+.h7
+{
+padding-left: 7px; padding-right: 7px; padding-top: 30px;padding-bottom: 30px; font-size: 15px; 
+
+}
+
+.sid
+{
+    color: white; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container
+
+{
+ position: relative;
+}
+
+.tri
+{
+    position: absolute; right: 576px; bottom: -5px;
+} 
+
+.rits
+{
+    padding-right: 130px; padding-top: 20px; margin-top: 10px;
+}
+
+.info
+{
+    padding-right: 1px; padding-top:0px; margin-top: -155px;
+}
