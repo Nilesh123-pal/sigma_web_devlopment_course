@@ -23,7 +23,7 @@ body
 .h2
 {
 
-    padding-right: 20px;
+    padding-right: 39px;
 }
 
 #password
@@ -37,7 +37,7 @@ body
 }
 .button
 {
-    margin-right: 338px; 
+    margin-right: 350px; 
 }
 
 .h2{
@@ -73,7 +73,7 @@ img{
 
 .h7
 {
-padding-left: 7px; padding-right: 7px; padding-top: 30px;padding-bottom: 30px; font-size: 15px; 
+padding-left:6px; padding-right: 6px; padding-top: 30px;padding-bottom: 30px; font-size: 15px; 
 
 }
 
@@ -90,7 +90,7 @@ padding-left: 7px; padding-right: 7px; padding-top: 30px;padding-bottom: 30px; f
 
 .tri
 {
-    position: absolute; right: 576px; bottom: -5px;
+    position: absolute; right: 575px; bottom: -5px;
 } 
 
 .rits
@@ -100,5 +100,5 @@ padding-left: 7px; padding-right: 7px; padding-top: 30px;padding-bottom: 30px; f
 
 .info
 {
-    padding-right: 1px; padding-top:0px; margin-top: -155px;
+    padding-right: -2px; padding-top:0px; margin-top: -155px;
 }
