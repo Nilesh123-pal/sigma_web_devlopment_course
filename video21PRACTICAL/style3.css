@@ -1,6 +1,6 @@
 body
 {
-    background-color: rgb(32, 109, 172);
+    background-color: rgb(255, 191, 14);
   
   
 }
@@ -8,7 +8,7 @@ body
 .box
 {
     
-        background-color: rgb(208, 209, 205); margin-top:50px; box-sizing: border-box; text-align: right; padding-bottom: 1px; margin-left: 300px; margin-right: 300px; margin-bottom: -10px;
+        background-color: rgb(208, 209, 205); margin-top:50px; box-sizing: border-box; text-align: right; padding-bottom: 1px; margin-left: 300px; margin-right: 300px; margin-bottom: -10px; margin-top: 10PX;
 }
 
 .fin{
@@ -101,4 +101,19 @@ padding-left:6px; padding-right: 6px; padding-top: 30px;padding-bottom: 30px; fo
 .info
 {
     padding-right: -2px; padding-top:0px; margin-top: -155px;
+}
+
+.bt
+{
+margin-left: 650px; background-color: black; color: white; padding-bottom: 2px; margin-top: 45px; margin-bottom: 0px;
+}
+
+sid
+{
+    border: 2px solid: white
+}
+
+.text
+{
+    text-align: center; color: red;
 }
