@@ -1,0 +1,13 @@
+body{
+    background-image: url(johncena.JPG); background-position: center; background-attachment: fixed; background-size: cover;
+}
+
+.red
+{
+    background-color: rgb(255, 2, 255); color: white; outline: auto; text-align: center; border: 5px solid black;
+}
+
+#head
+{
+    background-color: red; color: white;background-position: left top;
+}
