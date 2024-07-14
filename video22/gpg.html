@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>
+		How to vertically align an 
+		image inside a div?
+	</title>
+	
+	<style>
+		.container {
+			position: relative;
+			background: darkgrey;
+			height: 250px;
+			width: 75%;
+			margin: 0 10%;
+		}
+
+		img {
+			width: 20%;
+			position: absolute;
+			top: 90%;
+			right: 70%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+</head>
+
+<body>
+	<h1 style="color:green; margin:2rem">
+		GeeksforGeeks
+	</h1>
+	
+	<h3 style="margin:2rem; margin-top:-1.5rem">
+		How to vertically align an image inside a div?
+	</h3>
+	
+	<div class="container">
+		<img src=
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png"
+			alt="GeeksforGeeks Logo"
+			class="img">
+	</div>
+</body>
+
+</html>
