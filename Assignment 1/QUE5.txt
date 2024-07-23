@@ -1,0 +1,1 @@
+Doctype declaration is a very begging part of a webpage which tells browser to the version of HTML.

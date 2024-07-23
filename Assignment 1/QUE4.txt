@@ -1,0 +1,5 @@
+ 
+Element is a part of a web page which includes everything from start to end and all the contents in between. 
+
+And the other hand tag is a piece of code which tells browser to how to see the content.
+Ex:<p></p> <div></div>

@@ -1,0 +1,1 @@
+Comments in HTML nothing but a text which tells devlopers to working of the specific code if multiple devlopers works on a same project it helps devlopers to understand the working of a specific code written by any other devloper.

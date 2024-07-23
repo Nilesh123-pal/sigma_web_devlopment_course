@@ -1,71 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table_test</title>
 
     <style>
-table
-{
-    background-color: rgb(22, 150, 236); color: rgb(24, 22, 22); box-shadow: 10px 10px 10px rgb(87, 86, 86) 
-}
+        table {
+            background-image: url(johncena.JPG);
+            background-position: center;
+            background-repeat: no-repeat rgb(24, 22, 22);
+            box-shadow: 10px 10px 10px rgb(24, 23, 23)
+        }
 
 
-table caption
-{
-    border: 2px solid  rgb(87, 86, 86); background-color: rgb(22, 150, 236); 
-}
+        table caption {
+            border: 2px solid rgb(87, 86, 86);
+            background-color: rgb(22, 150, 236);
+            box-shadow: 10px 5px 10px;
+        }
 
+        * {
+            padding: 4px 2px;
+        }
 
+        body {
+            background-color: #17ecec;
+        }
+
+        #submit {
+            background-color: rgb(21, 202, 21);
+            border-radius: 8px;
+            border-style: groove;
+            box-shadow: 6px 3px 10px black;
+            padding: 6px 19.5px;
+            font-size: 15px;
+        }
+
+        form textarea {
+            background-color: rgb(174, 179, 162);
+            box-shadow: 6px 3px 10px black;
+        }
+
+        form label {
+            text-shadow: 3px 0px 2px black;
+        }
+
+        #reset
+        {
+            background-color: rgb(21, 202, 21);
+            border-radius: 8px;
+            border-style: groove;
+            box-shadow: 6px 3px 10px black;
+            padding: 6px 19.5px;
+            font-size: 15px;
+        }
     </style>
 </head>
+
 <body>
     <table cellspacing="5" cellpadding="5" border="5">
-<thead>
-    <caption><b>WEB-DEV-Team</b></caption>
-<tr>
-    <th bgcolor="orange">NAME</th>
-    <th bgcolor="orange">Age</th>
-    <th bgcolor="orange">City</th>
-    <th bgcolor="orange">Designation</th>
-</tr>
+        <thead>
+            <caption><b>WEB-DEV-Team</b></caption>
+            <tr>
+                <th bgcolor="orange">NAME</th>
+                <th bgcolor="orange">Age</th>
+                <th bgcolor="orange">City</th>
+                <th bgcolor="orange">Designation</th>
+            </tr>
 
-</thead>
-<tbody bgcolor="yellow">
-    <tr >
-        <td>NILESH</td>
-        <td>25</td>
-        <td>KANPUR</td>
-        <td rowspan="5" align="center" bgcolor="#6D17AD">Devloper</td>
- </tr>
- <tr bgcolor="gree" align="center">
-    <td>RITIKA</td>
-    <td>22</td>
-    <td>KANPUR</td>
-  
-</tr>
+        </thead>
+        <tbody bgcolor="yellow">
+            <tr>
+                <td>NILESH</td>
+                <td>25</td>
+                <td>KANPUR</td>
+                <td rowspan="5" align="center" bgcolor="#6D17AD">Devloper</td>
+            </tr>
+            <tr bgcolor="gree" align="center">
+                <td>RITIKA</td>
+                <td>22</td>
+                <td>KANPUR</td>
 
-<tr bgcolor="grey" align="center">
-    <td>VERSHA</td>
-    <td>22</td>
-    <td>KANPUR</td>
- 
-</tr>
-<tr bgcolor="red" align="center">
-    <td>MUKUL</td>
-    <td>22</td>
-    <td>KANPUR</td>
- 
-</tr>
-</tbody>
-<tfoot BGCOLOR="darkgreen">
-    <td colspan="4">
-TEAM OF 4 DEVLOPERS 👨‍💻👩‍💻👨‍💻
-    </td>
-</tfoot>
+            </tr>
+
+            <tr bgcolor="grey" align="center">
+                <td>VERSHA</td>
+                <td>22</td>
+                <td>KANPUR</td>
+
+            </tr>
+            <tr bgcolor="red" align="center">
+                <td>MUKUL</td>
+                <td>22</td>
+                <td>KANPUR</td>
+
+            </tr>
+        </tbody>
+        <tfoot BGCOLOR="darkgreen">
+            <td colspan="4">
+                TEAM OF 4 DEVLOPERS 👨‍💻👩‍💻👨‍💻
+            </td>
+        </tfoot>
 
 
     </table>
+
+    <div>
+        <form action="https://www.facebook.com" method="post" enctype="application/x-www-form-urlencoded"
+            target="_blank">
+            <label for="comment">COMMENT</label>
+            <textarea name="comment" cols="20" rows="5" required autofocus>✍...</textarea>
+            <br>
+
+            <br>
+            <label for="file">Select a file</label>
+
+            <input type="file" id="file" name="file" placeholder="select a file">
+            <br>
+            <label for="file">Select multiple file</label>
+
+            <input type="file" id="file" name="file" placeholder="select a file" multiple>
+            <input type="submit" id="submit" value="login">
+            <label for="cold">cold</label>
+            <input type="range" min="0" max="100">
+            <label for="age">age</label>
+            <input type="number" id="age" name="age" placeholder="age" min="10" max="50">
+            <label for="username">username</label>
+            <input type="text" id="username" name="username" placeholder="username" autofocus required>
+            <label for="male">male</label>
+            <input type="checkbox" name="gender" id="male">
+            <label for="female">female</label>
+            <input type="checkbox" name="gender" id="female">
+            <label for="fruits">fruits</label>
+            <select name="fruits">FRUITS
+                <option value="-">-</option>
+                <option value="APPLE">apple</option>
+                <option value="orange">orange</option>
+                <option value="jackfruit">jackfruit</option>
+                <input type="reset" id="reset">
+            </select>
+        </form>
+
+        <video src="videochamp.mp4" controls loop height="200vh" controlslist="nodownload nofullscreen" ; muted
+            poster="champ.ico"></video>
+    </div>
+
 </body>
+
 </html>
