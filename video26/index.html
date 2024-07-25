@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box
+        {
+            border: 2px solid black; display: inline-block; height: 40vh;
+        }
+
+        .box2
+        {
+            border:2px solid blue; display: inline-block; position: relative; top:50px; left: 60px;
+        }
+        
+
+        *
+        {
+            margin:6px 4px 5px 10px  
+        }
+
+        .box p:not(:first-child)
+        {
+            position: relative; top:70px;
+        }
+
+        .box img{
+            height: 12vh; position: relative; top: 63px; right:34px
+        }
+
+        .rits
+        {
+            border: 2px solid purple; display: inline-block; position: absolute; 
+        }
+.rits2
+{
+    border: 3px solid green; position: absolute;
+}
+    </style>
+</head>
+<body>
+    <div class="box">
+
+<p>Hi am a box</p>
+
+<div class="box2">
+    <p>Hi am a box2</p> 
+</div>
+
+<p>Hi am a box3</p>
+<img src="tri.png" alt="tri">
+
+    </div>
+    <div class="rits">
+
+        <p>HELLO AM RITS</p>
+
+       
+    </div>
+    <div class="rits2">
+        <p>hello am rits2</p>
+    </div>
+</body>
+</html>
