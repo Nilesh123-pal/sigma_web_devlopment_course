@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website-layout</title>
+   <style>
+
+html
+{
+    box-sizing: border-box;
+}
+
+*
+{
+    box-sizing: inherit; margin: 0px; font-weight: bold; 
+}
+.box
+{
+  text-align: center;  border: 2px solid rgb(0, 0, 0);
+}
+header
+{
+    font-size: 1.3em; text-align: center; background-color: rgb(0, 217, 255); grid-area: header; 
+}
+
+footer
+{
+    font-size: 1.3em; text-align: center; grid-area: footer;
+}
+
+.box1
+{
+background-color: violet; grid-area: box1;
+padding-top: 80px;
+}
+
+.box2
+{
+    background-color: bisque; grid-area: box2; padding: 80px;
+}
+
+.box3
+{
+    background-color: violet; grid-area: box3;padding-top: 80px;
+}
+
+footer
+{
+background-color: rgb(0, 255, 255); grid-area: footer;
+}
+
+
+.container
+{
+    width: 600px; height: 400px; display: grid; grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 0.1fr 0.7fr 0.1fr; border: 2px solid black; gap: 3px; background:linear-gradient(120deg, red,green,yellow,blue); 
+grid-template-areas: "header header header" 
+"box1 box2 box3"
+"box1 box2 box3"
+"box1 box2 box3"
+"box1 box2 box3"
+"box1 box2 box3"
+"box1 box2 box3"
+"box1 box2 box3"
+"box1 box2 box3"
+"box1 box2 box3"
+"footer footer footer" ;
+}
+
+   </style>
+</head>
+<body>
+    <div class="container">
+       <header><h1>HEADER</h1></header> 
+       <div class="box box1">
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+       </div>
+       <div class="box box2"><h1>CONTENT</h1>
+    Hi my name is Rits ❤❤💕❤❤
+    Ritika is my love i love her so much she is my everything love of my life i saw her only in my dreams she is my wiffy.My godess my sunshine my baby my cutiepie.
+    </div>
+       <div class="box box3"><h2>Ads</h2>
+        <ul>
+            <li type="none">Ad 1</li>
+            <li type="none">Ad 2</li>
+        </ul>
+    </div>
+      
+       <footer><h1>FOOTER</h1></footer>
+
+    </div>
+</body>
+</html>

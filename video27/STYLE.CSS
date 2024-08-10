@@ -1,0 +1,158 @@
+html{
+            box-sizing: border-box;
+        }
+
+        *
+        {
+            box-sizing: inherit;
+        }
+        .container
+        {
+            background-color: rgb(231, 171, 221); width: 300px; border-radius: 10px;  height: 79vh;
+        
+        }
+        .display
+        {
+            background-color: black; color: white; text-align: end;  font-size: 2em; margin-bottom: 3px; border-radius: 10px; padding: 30px; width: 100%; 
+        }
+
+        button{
+            border: 1px solid #ccc; padding: 16px;  background-color: #ccc;  font-size: 1.4em; border-radius: 5px; font-weight: bold; width:72px; padding: 16px;
+        } 
+
+
+ .imp
+{
+    display: grid; grid-template-columns: 0.2fr 0.2fr 0.2fr 0.2fr; gap: 3.3px;
+    grid-template-areas: "ac bracket percent divide"
+    "num7 num8 num9 xoxo"
+    "num4 num5 num6 dash"
+    "num1 num2 num3 add"
+    "num0 num0 decimal add"
+    "equal equal equal equal";
+    
+}
+
+.spe-keys
+{
+    background-color: darkgray;
+}
+
+.numbers
+{
+   background-color: orange;
+}
+
+.functions{
+    background-color: aqua;
+}
+
+
+button:hover {
+  background-color: #3f413f;
+}
+
+.ac
+{
+    grid-area: ac;
+}
+
+.bracket
+{
+    grid-area: bracket;
+}
+
+.percent
+{
+    grid-area: percent;
+}
+
+.divide
+{
+    grid-area: divide;
+}
+
+.num7
+{
+    grid-area: num7;
+}
+
+.num8
+{
+    grid-area: num8;
+}
+
+.num9
+{
+    grid-area: num9;
+}
+
+.num6
+{
+    grid-area: num6;
+}
+
+.num5
+{
+    grid-area: num5;
+}
+
+.num4
+{
+    grid-area: num4;
+}
+.num3
+{
+    grid-area: num3;
+}
+
+.num2
+{
+    grid-area: num2;
+}
+.num1
+{
+    grid-area: num1;
+}
+.add
+{
+    grid-area: add;
+}
+.num0
+{
+    grid-area: num0; grid-column:1 /span2
+}
+
+.decimal
+{
+    grid-area: decimal;
+}
+
+
+
+.xoxo
+{
+    grid-area: xoxo;
+}
+
+.dash
+{
+    grid-area: dash;
+}
+
+
+
+.dash
+{
+grid-area: dash;
+}
+
+.equal
+{
+    grid-area: equal; background: linear-gradient(120deg,red, green, blue, yellow); width: 100%;
+}
+
+.equal:hover
+{
+    background-color: #3f413f; 
+}

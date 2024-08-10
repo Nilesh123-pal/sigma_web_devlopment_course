@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+html
+{
+    box-sizing: border-box;
+}
+        *
+        {
+            padding: 0px; margin: 0px; box-sizing: inherit;
+        }
+
+
+       .container
+
+       {
+        border: 2px solid; 
+        gap: 2.5px; margin: 0px; padding: 0px; justify-content: end;
+        height: 100vh; width: 100vw; background-color: cadetblue; display: grid; grid-template-rows:1.4fr 3fr 3fr 1fr;
+        grid-template-columns: 0.6fr 0.9fr 0.4fr 0.5fr ;
+        grid-template-areas: "box2 box1 box1 box1"
+        "box2 box3 box5 box5"
+        "box2 box3 box5 box5"
+        "box4 box4 box4 box4"
+        "box4 box4 box4 box4";
+
+    }
+
+       .box
+       {
+        font-weight: bold; font-size: 40px; font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif; padding: 20px; text-align: center; 
+       }
+
+       .box1
+       {
+     background-color: darkorange; grid-area: box1; 
+       }
+
+       .box2
+       {
+        background-color: rgb(6, 230, 6) ; grid-area: box2;
+       }
+
+       .box3
+       {
+        background-color: rgb(11, 255, 235); grid-area: box3;
+       }
+
+       .box4
+       {
+       background-color: crimson; grid-area: box4; box-sizing: content-box;
+       }
+
+       .box5
+       {
+        background-color: rgb(255, 0, 242); grid-area: box5;
+       }
+
+      
+
+       ul
+       {
+        background-color: darkorange; display: flex; font-weight: 100; font-size: 20px; list-style-type: none; gap: 5px; justify-content: flex-end; border-radius: 5px; 
+       }
+
+        li{
+         padding: 1px; border-radius: 8px; 
+       }
+
+       button
+       {
+        background-color: rgb(100, 238, 8); border:rgb(92, 238, 8); font-size: 1em; color: rgb(163, 150, 150); border-radius: 5px; padding: 5px;
+       }
+       
+       navbar span{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       }
+      
+ 
+
+
+       /* for mobile */
+
+       @media screen and (max-width:640px)
+        {
+
+        .container
+
+        { margin:8px; 
+            grid-template-columns: 1.7fr 1fr 1fr 2fr;
+            grid-template-rows: 100px 0.2fr 0.7fr 40px; height: 70vh; width: 70vw;
+
+            grid-template-areas: "box1 box1 box1 box1"
+             "box1 box1 box1 box1"
+            "box2 box3 box3 box5"
+            "box2 box3 box3 box5"
+            "box2 box4 box4 box4"
+            "box2 box4 box4 box4";
+            
+            
+        }
+
+        .box
+       {
+        font-weight: bold; font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding: 10px; text-align: center; 
+       }
+
+
+    
+        ul
+       {
+        display: flex;  list-style-type: none; gap: 3px;  border-radius: 5px;  flex-direction: column; background-color: rgb(66, 59, 50);  padding: 4px; position: relative; left: 220px; width: 100px;
+         }
+
+        li
+        {
+                border-radius: 8px; width: 100%; 
+       }
+
+    
+       button
+       {
+        background-color: rgb(100, 238, 8); font-size:0.7em; color: rgb(163, 150, 150); border-radius: 5px;  width:100%; font-weight:bold; 
+       }
+ 
+
+       }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- grid ke concept mein row means grid container ke andr jo boxes or grid items hai unke height ko define krna or column define ka mtlb grid container ke andr jo grid items hai unke width ko define krna hai -->
+
+   
+
+    <div class="container">
+<div class="box box1">
+ <navbar><ul>
+
+     <li><button><span>Home</span></button></li>
+        <li><button><span>About</span></button></li>
+        <li><button><span>Infortmation</span></button></li>
+        <li><button><span>Reach Us</span></button></li>
+   
+    </ul></navbar>
+</div>
+<div class="box box2">box2</div>
+<div class="box box3">box3</div>
+<div class="box box4">box4</div>
+<div class="box box5">box5</div>
+    </div>
+</body>
+</html>

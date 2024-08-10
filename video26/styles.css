@@ -1,0 +1,94 @@
+html
+{
+    box-sizing: border-box;
+}
+
+*
+{
+    box-sizing: inherit;
+}
+
+/* default direction is row of flex:drection */
+.calculator
+{
+    display: flex; flex-direction: column; width: 300px; border: 2px solid rgb(122, 109, 109); border-radius: 8px; background: linear-gradient(red,blue,green,yellow,violet,rgb(126, 112, 114));
+}
+
+.calc-keys
+{
+     width: 100%; 
+}
+
+button
+{
+border: 1px solid #ccc; padding: 20px; margin: 2px; width: 70px;background-color: #ccc;  font-size: 1.6em; border-radius: 5px;
+}
+
+.key-function
+{
+    background: color #e8e6e3;
+}
+
+.key-operator
+{
+    background-color: #fe9241; color: white;
+}
+
+.equal-too
+{
+background:linear-gradient(120deg ,green,blue);margin: 0px; 
+}
+
+.calc-display
+{
+    width: 100%; color: #fff; background-color:  black; padding: 20px; font-size: 2em; border-bottom: 2px solid #2c2c2c; text-align: right; margin-bottom: 4px; 
+} 
+
+
+
+
+.key-row-1 , .key-row-2 , .key-row-3
+{
+  width: 100%;
+}
+
+.key-row-1
+{
+    display: flex; 
+}
+
+
+.key-row-3
+{
+    display: flex; 
+} 
+
+.key-row-2
+{
+    display: flex; 
+}
+
+.num
+{
+    display: flex; flex-wrap: wrap; 
+}
+
+.operator
+{
+    display: flex;  flex-direction: column;  
+}
+
+/* .number-zero
+{
+   flex-basis: 64.8%;
+} */
+
+.number-zero
+{
+    flex-grow: 2;
+}
+
+.equal
+{
+    display: flex; flex-grow: 8; 
+}

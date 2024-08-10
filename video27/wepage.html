@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage-layout</title>
+
+    <style>
+
+        html{
+            box-sizing: border-box;
+        }
+
+        *
+        {
+            box-sizing: inherit; margin: 0px;
+        }
+        .container
+        {
+            display: grid; 
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows:0.2fr 1.2fr 1.1fr 0.2fr;
+            grid-template-areas: "navbar navbar navbar navbar"
+                                  "sidebar main main main" 
+                                  "sidebar box1 box2 box3"
+                                  "sidebar footer footer footer";
+
+                                  gap: .1rem; text-align: center; font-size: 1.5rem; color: white; 
+
+        }
+
+        .navbar
+        {
+           background-color: rgb(79, 202, 79);
+          padding: 5px;
+
+           grid-area: navbar;
+        }
+
+        .main
+        {
+            background-color: rgb(29, 226, 11);
+            grid-area: main; 
+        }
+        .sidebar
+        {
+            background-color: rgb(149, 149, 233);
+            grid-area: sidebar;  
+        }
+        .box1
+        {
+            background-color: violet;
+            grid-area: box1;  
+        }
+
+        .box2
+        {
+            background-color: crimson;
+            grid-area: box2; 
+        }
+
+        .box3
+        {
+            background-color: pink;
+            grid-area: box3; 
+        }
+
+        .footer
+        {
+            background-color: indianred;
+            grid-area: footer; 
+        }
+    
+        @media screen and (max-width: 640px)
+          {
+.container
+{
+
+   
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1.3fr 1.3fr 1.3fr 0.8fr;
+
+
+    grid-template-areas: "navbar"
+    "sidebar"
+    "main"
+    "box1"
+    "box2"
+    "box3"
+    "footer";
+} 
+}  
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">NAVBAR</div>
+        <div class="main">MAIN</div>
+  <div class="sidebar">SIDEBAR</div>
+  <div class="box1">BOX1</div>
+  <div class="box2">BOX2</div>
+  <div class="box3">BOX3</div>
+  <div class="footer">FOOTER</div>
+
+    </div>
+
+</body>
+</html>

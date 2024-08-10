@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* 
+        grid mein column se mtlb width and row se mtlb heigth */
+
+        /* grid ke case mein justify content main axis or x asis or hrizontaly grid items ko align krega jbki align items vertically items ko align krega */
+        /* justify content or align content grid container ke andr boxes ko horizontally or vertically align krta hai jbki justify item or align item box ke andr jo item hai jo likha hai maine ex box1,box2,box3,box4 usko likhne mein jitna space occupy ho rha us hisab se items ko align krta hai horizontolly */
+/* justify strech or align strect container ke nadr box ke jyada se jyada jitna strech fail skta hai wo decide krta hai  */
+
+        .container
+        {
+            width: 80vw; display: grid; box-sizing: 2px;  height: 100vh; grid-template-columns:200px 100px 100px 100px; border: 2px solid;
+            grid-template-rows:100px 200px 100px 100px;  grid-template-areas: "box1 box2 box3 box4"
+            "box5 box6 box7 box8"
+             "box9 box10 box11 box12"
+            "box13 box14 box15 box16";  padding: 5px; margin-bottom: 20px; justify-content: center; align-content: start;
+             
+           
+        }
+
+        .box
+        {
+            border: 2px solid blue; padding: 20px; text-align: center; font-size: 20px; margin-top: 25px;
+        }
+        .box1
+        {
+          background-color: chartreuse; grid-area: box1;
+        }
+
+        .box2
+        {
+            background-color: crimson; grid-area: box2;
+        }
+
+        .box3
+        {
+            background-color: rgb(19, 214, 19); grid-area: box3;
+        }
+        .box5
+        {
+            background-color: chartreuse;
+        }
+
+        .box6
+        {
+            background-color: crimson;
+        }
+
+        .box7
+        {
+            background-color: rgb(19, 214, 19); 
+        }
+
+        .box8
+    {
+        background-color: darkorange;
+    }
+
+    .box9
+    {
+        background-color: chartreuse;
+    }
+
+    .box10
+    {
+        background-color: crimson; 
+    }
+
+    .box11
+    {
+        background-color: rgb(19, 214, 19); 
+    }
+
+    .box12
+    {
+        background-color: darkorange;
+    }
+      .box13
+      {
+        background-color: chartreuse;
+      } 
+    
+
+      .box14
+      {
+        background-color: crimson; 
+      }
+
+      .box15
+      {
+        background-color: rgb(19, 214, 19);
+      }
+
+      .box16
+      {
+        
+        background-color: darkorange;
+    }
+      
+    .box4
+        {
+            background-color: darkorange; grid-area: box4;
+        }
+
+        @media screen and (max-width: 640px)
+       {
+       .container
+        { height: 900px; padding: 0px; margin: 0px;
+          grid-template-rows:repeat(16, 55px); grid-template-columns: 100px; align-content: start; justify-content: space-evenly;
+
+          grid-template-areas: "box1"
+            "box2"
+            "box3"
+            "box4"
+            "box5"; 
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+<div class=" box box1">box1</div>
+<div class=" box box2">box2</div>
+<div class=" box box3">box3</div>
+<div class=" box box4">box4</div>
+<div class=" box box5">box5</div>
+<div class=" box box6">box6</div>
+<div class=" box box7">box7</div>
+<div class=" box box8">box8</div>
+<div class=" box box9">box9</div>
+<div class=" box box10">box10</div>
+<div class=" box box11">box11</div>
+<div class=" box box12">box12</div>
+<div class=" box box13">box13</div>
+<div class=" box box14">box14</div>
+<div class=" box box15">box15</div>
+<div class=" box box16">box16</div>
+
+
+
+    </div>
+</body>
+</html>

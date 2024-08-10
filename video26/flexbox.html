@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX-BOX</title>
+    <style>
+:root{
+    --color:pink;
+    --bg-color:blue;
+}
+   
+html{
+    box-sizing:border-box
+}
+
+*
+{
+    box-sizing: inherit; padding: 0; margin: 0;
+}
+
+
+ul li{
+    list-style-type:none; margin: 5px; padding: 5px;
+}
+
+ul
+{
+    display: flex; flex-direction: row; justify-content: center; 
+}
+
+
+.box
+{
+    border: solid var(--color); background-color: var(--bg-color); 
+}
+
+
+@media screen and (min-width:1024px)
+
+/* for desktop&laptop */
+{
+    .box
+    {
+    
+    color:red; background-color: yellow;  
+    }
+    
+    .para
+    {
+        background: linear-gradient(120deg, green  ,orange ,rgb(141, 74, 141)); color: rgb(128, 41, 0); display: flex; flex-direction: row;
+    }
+    
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px)
+
+/* for tablet */
+{
+    .box
+    {
+       color:rgb(33, 34, 32); background-color: rgb(240, 228, 232);
+    }
+
+    .para
+    {
+        background:linear-gradient( 120deg, blue,cyan,green); color: green; flex-direction: row; display: flex;
+    }
+}
+
+@media screen and (max-width:767px)
+ /* for mobile phones */
+{
+    .box
+    {
+        background-color: green;  color: beige;
+        
+    }
+
+    /* ul
+    {
+        display: flex; flex-direction: column;
+    } */
+ 
+    .para
+    {
+        background: linear-gradient(120deg, red,orange,yellow,green,blue,indigo,violet); color: rgb(10, 10, 10); flex-direction: column; display: flex;
+    }
+}
+
+.para
+{
+border: 2px solid black; margin: 20px; min-height: 18vh; 
+}
+
+/* .para img:first-child{
+float: right;
+} */
+
+
+    </style>
+</head>
+<body>
+   <div class="box">
+    <nav>
+<ul>
+    <li>home</li>
+    <li>about</li>
+    <li>contact</li>
+</ul>
+    </nav>
+   </div>
+
+   <div class="para">
+    <img src="johncena.JPG" height="120vh">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente incidunt esse magnam quos illum exercitationem ut explicabo neque id omnis quibusdam, maiores suscipit, similique perspiciatis ipsum enim, dolorum aliquid eligendi deserunt? Reprehenderit vero quas omnis cum illo minima temporibus pariatur eos autem id doloremque soluta maiores animi quis perferendis, debitis dolores quia eveniet, odit sed distinctio. Laborum quisquam corrupti adipisci. Molestias, ad voluptatem! Aperiam similique neque impedit nesciunt iusto incidunt nobis nulla odio sunt. Quis quidem molestias aliquid, ad magnam neque alias earum excepturi cupiditate, pariatur inventore rerum officiis dolorem culpa! Mollitia sunt repellendus aspernatur incidunt laudantium amet eligendi porro.</p>
+   </div>
+</body>
+</html>
