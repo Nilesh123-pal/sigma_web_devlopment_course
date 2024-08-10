@@ -80,7 +80,94 @@ html
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
        }
       
+ #sample::after
+ {
+    color: darkgreen; font-weight: bolder;
+    content: "after-content";
+ }
+
+ #sample::before
+ {
+    content: "before-content";
+    color: crimson; font-weight: bolder;
+ }
+
+ #sample h1
+ {
+    color: darkcyan;
+ }
+
+
+ #sample h1::selection
+{
+    color: rgb(255, 94, 0); background-color: rgb(21, 255, 0); text-decoration: underline;
+}
+
+ #sample::first-line
+ {
+    text-decoration: underline;
+    background-color: rgb(216, 237, 100);
+ }
+
+ #sample::first-letter
+ {
+   background-color: darkgreen; font-size: xx-large;
+ }
+
  
+
+textarea::placeholder
+{
+    background-color: rgb(255, 251, 0);
+}
+
+textarea
+{
+    background-color: chartreuse;
+}
+
+
+a:hover{
+    background-color: green;
+}
+
+a:visited{
+    background-color: rgb(250, 5, 250); color: chartreuse;
+}
+
+a:link
+{
+    color: rgb(117, 210, 30); text-decoration: none;
+}
+
+a:focus
+{
+    background-color: red;
+}
+a:active
+{
+    background-color: rgb(25, 22, 197);
+}
+
+p:first-child
+{
+    color: chartreuse;
+}
+
+p:last-child
+{
+    color: darkviolet;
+}
+
+p:nth-child(-n+5)
+{
+    color: yellowgreen;
+}
+
+h3:nth-child(n+4)
+{
+    color: gold;
+}
 
 
        /* for mobile */
@@ -113,7 +200,7 @@ html
     
         ul
        {
-        display: flex;  list-style-type: none; gap: 3px;  border-radius: 5px;  flex-direction: column; background-color: rgb(66, 59, 50);  padding: 4px; position: relative; left: 220px; width: 100px;
+        display: flex;     gap: 3px;  border-radius: 5px;  flex-direction: column; background-color: rgb(66, 59, 50);  padding: 4px; position: relative; left: 170px; width: 100px;
          }
 
         li
@@ -124,9 +211,9 @@ html
     
        button
        {
-        background-color: rgb(100, 238, 8); font-size:0.7em; color: rgb(163, 150, 150); border-radius: 5px;  width:100%; font-weight:bold; 
+        background-color: rgb(100, 238, 8); font-size:0.7em; color: rgb(163, 150, 150); border-radius: 5px;  width:100%; font-weight:bold;
        }
- 
+
 
        }
 
@@ -154,6 +241,40 @@ html
 <div class="box box3">box3</div>
 <div class="box box4">box4</div>
 <div class="box box5">box5</div>
+    </div>
+     <div id="sample"><h1>THIS IS PSEUDO SELECTOR</h1></div>
+
+    <textarea name="comment" cols="24" rows="4" id="comment" placeholder="write a comment...✍"></textarea>
+
+    <a href="http://www.sriram.com" target="_blank">SRIRAM</a>
+    <br>
+
+    <a href="http://www.nikkibella.com" target="_blank">nikkibella</a>
+
+    <div>
+        <p>para1</p>
+        <p>para2</p>
+        <p>para3</p>
+        <p>para4</p>
+        <p>para5</p>
+        <p>para6</p>
+        <p>para7</p>
+        <p>para8</p>
+        <p>para9</p>
+        <p>para10</p>
+    </div>
+
+    <div>
+        <h3>para1</h3>
+        <h3>para2</h3>
+        <h3>para3</h3>
+        <h3>para4</h3>
+        <h3>para5</h3>
+        <h3>para6</h3>
+        <h3>para7</h3>
+        <h3>para8</h3>
+        <h3>para9</h3>
+        <h3>para10</h3>
     </div>
 </body>
 </html>
