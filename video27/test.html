@@ -169,6 +169,77 @@ h3:nth-child(n+4)
     color: gold;
 }
 
+.box6{
+    height: 100px; width: 100px; background-color: darkred; margin: 10px; 
+    
+     transform:  scale(2) rotate(10deg)  skew(10deg) translate(100px,50px); 
+
+    /* transition-property: background-color,border-radius,width;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
+     transition-delay: 2s;  */
+    
+     transition: background-color 5s ease-in 2s, width 5s ease-in 2s, border-radius 5s ease-in 2s ;
+
+    
+    
+}
+
+.box6:hover
+{
+    background-color:greenyellow;
+
+    border-radius: 8px;
+    width: 400px;
+}
+
+
+
+.box7{
+    height: 100px; width: 100px; background-color: rgb(63, 139, 0); margin: 10px; 
+    
+     transform:  scale(2) rotate(20deg)  skew(20deg) translate(80px,40px); 
+}
+     
+
+.box7:hover{
+    animation-duration: 5s; animation-iteration-count: 4; animation-name: rits; animation-delay: 2s;
+}
+
+@keyframes rits
+{
+0%
+{
+    background-color: blueviolet; width: 100px; height: 100px;
+    border-radius: 5px;
+}
+
+50%
+{
+    background-color: darkcyan; width: 200px; height: 200px;
+    border-radius: 7px;
+}
+
+60%
+{
+background-image: url(https://aiartshop.com/cdn/shop/files/divine-union-exploring-the-sacred-love-of-mahadev-and-parvati-ai-painting-581.webp?v=1707090592);   width: 300px; height: 300px; border-radius: 8px;
+}
+
+80%
+{
+    background-color: rgb(141, 230, 9); width: 400px; height: 400px; border-radius: 9px;
+}
+
+100%
+{
+    background-image: url(https://images.playground.com/8e3b89bb4d67410e8fe043424305d84c.jpeg); width: 500px; height: 500px; border-radius: 10px;
+}
+}
+
+div p:only-child
+{
+color: aqua; font-weight: bolder; font-size: 1.4em; transform: rotatex(180deg); 
+}
 
        /* for mobile */
 
@@ -276,5 +347,10 @@ h3:nth-child(n+4)
         <h3>para9</h3>
         <h3>para10</h3>
     </div>
+
+    <div class="box6"></div>
+    <div class="paragraph"><p>paragraph</p></div>
+<br>
+    <div class="box7"></div>
 </body>
 </html>
