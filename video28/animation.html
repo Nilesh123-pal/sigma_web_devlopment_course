@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+*
+{
+    box-sizing: inherit;
+}
+        html
+        {
+            box-sizing: border-box;
+        }
+/* 
+      .nav
+{
+   display: flex; flex-direction: column;
+} */
+
+        .btn
+        {
+            padding: 10px 20px; border: none; border-radius: 5px; font-size: 2em;
+        cursor: pointer; transition: background-color  0s ease-in 0s ;  
+        }
+
+        .primary-btn
+        {
+            background-color: #007bf0; color: white; 
+        }
+
+        .secondary-btn
+        {
+            background-color: yellow; color: black; 
+        }
+
+        .primary-btn:hover
+        {
+            background-color: #043766; color: white;
+        }
+
+ .secondary-btn:hover
+
+        {
+            
+            background-color: rgb(27, 109, 6);  color: black;
+        }
+/* _______________________________________________________________ */
+
+        .accordian-item
+        {
+margin: 20px;
+        }
+
+.accordian-header
+{
+    background-color: rgb(147, 165, 165); padding: 10px; cursor: pointer; border-radius: 5px;
+}
+
+.accordian-content
+{
+ font-size: 0px;  transition: font-size 1s ease 1s,background-color 1s ease 1s,border-radius 1s ease  1s, padding 1s ease 1s;
+}
+
+.accordian-header:hover + .accordian-content
+{
+   background-color: rgb(7, 69, 238); font-size: 20px; border-radius: 5px; padding: 10px;
+    
+} 
+
+
+/* _______________________________________________________ */
+
+
+
+.accordian-item2
+        {
+margin: 20px;
+        }
+
+
+        
+.accordian-header2
+{
+    background-color: rgb(113, 131, 131); padding: 10px; cursor: pointer; border-radius: 5px;
+}
+
+ .accordian-content2
+{
+    font-size: 0px; transition: font-size 1s ease-in 1s, background-color 1s ease-in 1s, padding 1s ease-in 1s, border-radius 1s ease-in 1s,display 1s ease-in 1s;
+}
+
+.accordian-header2:hover + .accordian-content2
+{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+    font-size: 20px; background-color: #00f0c8; padding: 10px;
+    border-radius: 5px; display: inline-block;
+}
+
+  </style>
+</head>
+<body>
+    <div class="nav">
+    <button class="btn primary-btn">
+        Click me!!
+    </button>
+    <button class="btn secondary-btn">
+        Click me!!
+    </button>
+</div>
+
+<div class="accordian">
+    <div class="accordian-item">
+    <div class="accordian-header">Section 1</div>
+    <div class="accordian-content">Some Content</div>
+</div>
+
+<div class="accordian-item">
+    <div class="accordian-header">Section 2</div>
+    <div class="accordian-content">Some Content</div>
+</div>
+
+</div>
+<br>
+
+<div class="accordian2">
+    <div class="accordian-item2">
+    <div class="accordian-header2">Section 1</div>
+    <div class="accordian-content2">My love is Rits i love her so so so so much she is my lyf she is my everything she is my wiffy she is so adorable.</div>
+</div>
+
+<div class="accordian-item2">
+    <div class="accordian-header2">Section 2</div>
+    <div class="accordian-content2">I Love U Rits jaan meri jaaneman</div>
+</div>  
+
+</div>
+
+</body>
+</html>

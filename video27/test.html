@@ -197,13 +197,17 @@ h3:nth-child(n+4)
 
 .box7{
     height: 100px; width: 100px; background-color: rgb(63, 139, 0); margin: 10px; 
-    
+   
      transform:  scale(2) rotate(20deg)  skew(20deg) translate(80px,40px); 
 }
      
 
 .box7:hover{
-    animation-duration: 5s; animation-iteration-count: 4; animation-name: rits; animation-delay: 2s;
+    /* animation-duration: 5s; animation-name: rits; animation-delay: 2s; animation-iteration-count: 2; 
+    animation-direction: alternate; */
+animation: name duration timing-function delay iteration-count direction fill-mode;
+
+   animation: rits 2s ease-in 2s 4 alternate forwards;
 }
 
 @keyframes rits
