@@ -1,0 +1,2 @@
+Ans1- We can use flex box for a simple layouts it's works on one dimension either row or column at a time.
+We can use grid for complex layouts it can handle both row or column at a same time and helps to create complex design.

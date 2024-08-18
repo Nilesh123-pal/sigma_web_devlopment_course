@@ -1,0 +1,185 @@
+html{
+    box-sizing: border-box;
+}
+
+*
+{
+    box-sizing: inherit; margin: 0px; padding: 0px; font-family: "Nunito:itel",sans-serif;
+}
+
+.container
+{
+    border: 2px solid black; width: 800px; height: 500px; margin: 5px 2px 3px 10px; display: grid; grid-template-rows: 1fr 1fr 1fr 1fr 1fr; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; cursor: pointer;
+}
+
+.navbar
+{
+   margin: 20px; grid-column: 1 /span 3; display: flex; gap: 120px; justify-content: flex-end; 
+}
+
+.box
+{
+      margin: 20px; grid-column: 1 /span 3; grid-row: 2 /span 4; 
+}
+   
+
+.box2
+{
+    
+    margin: 20px; 
+    grid-column: 4 /span 2; grid-row: 1 /span 4; 
+}
+
+.box >.rits
+
+{
+    display: flex; gap: 15px; font-weight: bold; margin-top :15px; cursor: pointer;font-size: 1.3em;
+}
+
+.rits p:nth-child(1)
+{
+color: greenyellow;
+}
+
+.rits p:nth-child(2)
+{
+    color: orange;
+}
+
+.rits p:nth-child(3)
+
+{
+    color: navy;
+}
+
+.navbar >.buttons
+{
+ width:200px; justify-content: space-between;
+display: flex; flex-wrap: wrap; gap: 10px; 
+}
+
+
+.buttons >.clean-bg
+{
+border: none; background-color: white;
+}
+
+.buttons >.login
+{
+    background-color: rgb(238, 157, 6); color: white; padding: 3px; 
+}
+
+.buttons >.login:hover
+{
+    background-color: rgb(165, 112, 15);
+}
+
+.buttons button
+{
+    border-radius: 5px; cursor: pointer; 
+}
+
+ 
+
+.btn > .book-ticket
+{
+background-color: rgb(36, 36, 172); color: white; border: 2px solid blue;
+}
+
+.btn >.book-ticket:hover
+{
+    background-color: rgb(6, 6, 250);
+}
+.btn > button
+{
+    background-color: white; padding: 4px 3px 4px 3px; color: black; font-weight: bold; margin-top: 35px; cursor: pointer; border: 2px solid rgb(241, 230, 230); font-size: 13px; border-radius: 3px; 
+}
+
+.btn > button:hover
+{
+    background-color: rgb(194, 143, 143);
+}
+
+.btn  img
+{
+    position: relative; top:5px; 
+}
+
+
+  .accordian
+ {
+  margin-top: 20px; 
+} 
+
+ .items
+{
+    margin-top: 10px; 
+}
+
+
+.section1
+{
+    width: 100%; border: 2px solid rgb(226, 192, 192); height: 50px; display: flex; justify-content: center; align-items: center; height: 60px; 
+}
+
+.section2
+{
+    width: 100%; border: 2px solid  rgb(226, 192, 192); height: 50px;display: flex; justify-content: center; align-items: center;  height: 60px;
+}
+
+.grid
+{
+    display: grid;
+}
+
+.search-train
+{
+    background-color: rgb(8, 194, 8); padding: 5px;  display: flex; justify-content: center; align-items: center; color: white; margin-top: 10px; gap: 10px; cursor: pointer;
+}
+
+.item
+{
+    margin-bottom: 10px;
+}
+
+.section1
+{
+    width: 100%; display: flex; justify-content: flex-start; align-items: center; gap: 30px; 
+}
+
+.sectionA,.sectionB
+{
+    align-items: center; display: flex; justify-content: center;
+}
+
+.section2
+{
+    width: 100%; display: flex; justify-content: flex-start; align-items: center; gap: 5px;
+}
+
+.sectionA > select
+{
+    border: none;
+}
+
+.sectionB > select
+{
+    border: none;  
+}
+
+.sectionB > label
+{
+    position: relative; bottom: 20px;
+}
+
+.sectionA > label
+{
+    z-index: 1; position: relative; bottom: 20px;
+}
+
+.sectionA > input
+{
+    position:  relative; right:20px
+}
+
+

@@ -1,0 +1,5 @@
+Ans2-(a.) Justify content helps align flex item in horizontal or x-axis or main axis.
+(b.) Align items helps align items on vertical or y-axis or cross axis.
+(c.)Helps to put gap between multiple contents. in a flex box.
+(d.) Helps to denote the direction of flex items it's by default row. or horizontal axis.
+(e.)"Flex wrap" is a feature in CSS that allows items in a flex container to move onto a new line if there's not enough space on one line.

@@ -11,29 +11,46 @@
 }
         html
         {
-            box-sizing: border-box;
+            box-sizing: border-box; 
         }
-/* 
+ 
       .nav
 {
-   display: flex; flex-direction: column;
-} */
+   display: flex;  gap: 5px; background-color: #043766; width: 400px; flex-wrap: wrap; padding: 4px;
+} 
 
         .btn
         {
-            padding: 10px 20px; border: none; border-radius: 5px; font-size: 2em;
-        cursor: pointer; transition: background-color  0s ease-in 0s ;  
+            padding: 10px 20px; border: none; border-radius: 5px; font-size: 1em; 
+        cursor: pointer; transition: background-color  0s ease-in 0s; 
         }
 
         .primary-btn
         {
-            background-color: #007bf0; color: white; 
+            background-color: #007bf0; color: white; width:100px;
         }
 
         .secondary-btn
         {
-            background-color: yellow; color: black; 
+            background-color: yellow; color: black; width:100px;
         }
+
+        .third-btn
+        {
+            background-color: darksalmon; width:100px;
+        }
+
+        .forth-btn
+        {
+            background-color: darkgreen; width:100px;
+        }
+
+        .fifth-btn
+        {
+            background-color: darkturquoise; width:100px;
+        }
+
+
 
         .primary-btn:hover
         {
@@ -44,8 +61,10 @@
 
         {
             
-            background-color: rgb(27, 109, 6);  color: black;
+            background-color: rgb(87, 102, 4);  color: black;
         }
+
+
 /* _______________________________________________________________ */
 
         .accordian-item
@@ -63,7 +82,7 @@ margin: 20px;
  font-size: 0px;  transition: font-size 1s ease 1s,background-color 1s ease 1s,border-radius 1s ease  1s, padding 1s ease 1s;
 }
 
-.accordian-header:hover + .accordian-content
+.accordian-header:hover ~ .accordian-content
 {
    background-color: rgb(7, 69, 238); font-size: 20px; border-radius: 5px; padding: 10px;
     
@@ -91,13 +110,406 @@ margin: 20px;
     font-size: 0px; transition: font-size 1s ease-in 1s, background-color 1s ease-in 1s, padding 1s ease-in 1s, border-radius 1s ease-in 1s,display 1s ease-in 1s;
 }
 
-.accordian-header2:hover + .accordian-content2
+.accordian-header2:hover  + .accordian-content2
 {
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 
     font-size: 20px; background-color: #00f0c8; padding: 10px;
     border-radius: 5px; display: inline-block;
 }
+
+.loader-1
+{
+    border: 5px solid rgb(165, 149, 149); width: 50px; height: 50px; border-top: 5px solid rgb(9, 101, 187); border-bottom: 5px solid rgb(9, 101, 187);border-radius: 50%; animation: spin-1 1s linear infinite ;
+}
+
+.pulse-loader
+{
+    height:20px ; width: 20px; background-color: #007bf0; border-radius:50% ; animation: pulse 1s infinite ease-in-out;
+}
+
+.pulse
+{
+    color: green; width: 240px; font-weight: bold;  animation: pulses 1s ease-in-out infinite ;
+}
+
+.bounce
+{
+    height:50px ;  display: flex; justify-content: center; align-items: center; gap: 4px;
+}
+
+
+.bounce > div
+{
+height: 20px; width: 20px; background-color: #007bf0; border-radius: 50%; animation: bounce 1s ease-in-out infinite;
+}
+
+.bounce div:nth-child(1)
+
+{
+    animation-delay: 0.3s;
+}
+
+.bounce div:nth-child(3)
+
+{
+    animation-delay: 0.3s;
+}
+
+.bouce div:nth-child(2)
+{
+    animation-delay: 3s;
+}
+.bouce div:nth-child(4)
+{
+    animation-delay: 3s;
+}
+
+
+.slide
+{
+    height:50px ;  display: flex; justify-content: center; align-items: center; gap: 4px; 
+}
+
+.slide > div
+{
+    height: 20px; width: 20px; background-color: #007bf0; border-radius: 50%;  animation: slide 1s ease-in-out infinite;
+}
+
+.slide div:nth-child(1)
+{
+    animation-delay: 0.2s;
+}
+.slide div:nth-child(2)
+{
+    animation-delay: 0.5s;
+}
+
+.slide div:nth-child(3)
+{
+    animation-delay: 0.2s;
+}
+.slide div:nth-child(4)
+{
+    animation-delay: 0.5s;
+}
+
+
+.wave
+{
+    height:50px ;  display: flex; justify-content: center; align-items: center; gap: 4px; 
+}
+
+.wave >div
+{
+    height: 20px; width: 10px; background-color: #007bf0; border-radius: 5px;  animation: wave 1s ease-in-out infinite;
+}
+
+.wave div:nth-child(2)
+{
+    animation-delay: 0.5s;
+}
+
+.wave div:nth-child(4)
+{
+    animation-delay: 0.5s;
+}
+
+.heart
+{
+    font-size: 4em; color: red; animation: heart 1s ease-in-out infinite;
+}
+
+.ball
+{
+height: 20px;  display: flex; justify-content: center; align-content: center;  gap: 5px; 
+}
+
+.ball div
+{
+    width: 20px; height: 20px; background-color: #007bf0; border-radius: 50%; animation: ball 1s ease-in-out infinite;
+}
+
+.ball div:nth-child(2)
+{
+    animation-delay: 0.3s;
+}
+
+.ball div:nth-child(4)
+{
+    animation-delay: 0.3s; 
+}
+
+@keyframes ball 
+{
+    0%
+    {
+        transform: translateY(0); transform: scale(0.8);
+        opacity: 0.7;
+    }
+
+    50%
+    {
+        transform: translateY(-15px); transform: scale(1);
+        opacity: 1;
+    }
+    100%
+    {
+        transform: translateY(0); transform: scale(0.8);
+        opacity: 0.7;
+    }
+}
+@keyframes heart 
+{
+    0%
+    {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50%
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100%
+    {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}
+
+@keyframes spin-1{
+    0%
+    {
+       transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes pulse
+{
+
+    0%
+    {
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+
+    50%
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100%
+    {
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+
+}
+
+
+@keyframes pulses
+{
+ 0%
+ {
+    transform: scale(0.8);
+ }   
+
+ 50%
+ {
+    transform: scale(1);
+ }
+
+ 100%
+ {
+    transform: scale(0.8);
+ }
+}
+
+@keyframes bounce {
+    0%
+    {
+        transform: translateY(0);
+    }
+
+    50%
+    {
+        transform: translateY(-15px);
+    }
+
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide
+{
+    0%
+    {
+        transform: translatex(0);
+    }
+    
+    50%
+    {
+        transform: translatex(15px);
+    }
+
+    100%
+    {
+        transform: translatex(0);
+    }
+}
+
+@keyframes wave {
+    0%
+    {
+         height: 40px;
+    }
+    
+    50%
+    {
+         height: 10px; 
+    }
+
+    100%
+    {
+     height: 40px;  
+    } 
+}
+
+.accordian{
+    background-color: #007bf0;
+}
+
+.item
+{
+      margin: 20px; border: 2px solid; border-radius: 5px; background-color: black;
+}
+
+.header
+{
+    height: 40px; background-color: #707479; font-size: 1.5em; border-radius: 5px; padding: 10px;  color: #00f0c8; cursor: pointer;
+}
+
+.content
+{
+    font-size: 0px; transition: font-size 1s ease-in 1s, background-color 1s ease-in 1s, padding 1s ease-in 1s, border-radius 1s ease-in 1s , display 1s ease-in 1s;
+
+
+
+  
+}
+
+.header:active + .content
+{
+    font-size: 1.2em ; background-color: #007bf0; padding: 10px;
+    border-radius: 5px; animation: para 1s ease-in-out 1s infinite;
+}
+
+@keyframes para 
+{
+    0%
+    {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+
+    50%
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100%
+    {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+}
+
+
+.motion
+{
+    height: 75px; border: 2px solid black; display: flex; 
+}
+
+.motion >div
+{
+    font-size: 3em;  animation: car-motion 5s normal infinite 1s;
+}
+
+
+
+@keyframes car-motion 
+{
+    0%
+    {
+        transform:rotateY(180deg);
+    }
+
+        50%
+    {
+        transform: translateX(600px);
+    } 
+
+   
+      80%
+    {
+        transform: rotatey(0deg);
+        
+        
+    }  
+
+    100%
+    {
+        transform:translateX(-500px);
+    }
+}
+
+
+.motion >div
+{
+animation-delay: 5s;
+}
+
+.spin2
+{
+    height: 50px; border: 2px solid; display: flex; justify-content: center; align-items:center ;
+}
+
+.spin2 div
+{
+    width: 40px; height: 40px; border: 4px solid gray; border-top: 4px solid  blue; border-radius: 50%;
+
+    animation: spin2 1s linear infinite 1s ;
+}
+
+@keyframes spin2 
+{
+  0%
+  {
+    transform: rotate(0deg);
+  }  
+
+  100%
+  {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
 
   </style>
 </head>
@@ -109,7 +521,19 @@ margin: 20px;
     <button class="btn secondary-btn">
         Click me!!
     </button>
+
+    <button class="btn third-btn">
+        Click me!!
+    </button>
+
+    <button class="btn forth-btn">
+        Click me!!
+    </button>
+    <button class="btn fifth-btn">
+        Click me!!
+    </button>
 </div>
+
 
 <div class="accordian">
     <div class="accordian-item">
@@ -133,10 +557,77 @@ margin: 20px;
 
 <div class="accordian-item2">
     <div class="accordian-header2">Section 2</div>
-    <div class="accordian-content2">I Love U Rits jaan meri jaaneman</div>
+    <div class="accordian-content2">I Love U Rits jaan meri jaaneman❤❤❤💕❤❤💕❤❤</div>
 </div>  
 
 </div>
+<hr>
+<div class="loader-1"></div>
+<hr>
+<div class="pulse-loader"></div>
+<hr>
 
+<div class="pulse">
+<pre>
+           /\            /\
+    /\    /  \          /  \
+   /  \  /    \  /\    /    \
+  /    \/      \/  \/\/      \
+</pre>
+</div>
+
+<hr>
+<div class="bounce">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<hr>
+<div class="slide">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+
+<hr>
+
+<div class="wave">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<hr>
+<div class="heart">❤</div>
+<hr>
+<div class="ball">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<hr>
+
+<div class="accordian">
+    <div class="item">
+    <div class="header">Section 1</div>
+    <div class="content">Some Content</div>
+    </div>
+    <div class="item">
+    <div class="header">Section 2</div>
+    <div class="content">Some Content</div>
+</div>
+</div>
+
+<hr>
+<div class="motion">
+    <div>🚗</div>
+</div>
+<hr>
+<div class="spin2">
+    <div></div>
+</div>
 </body>
 </html>

@@ -1,0 +1,77 @@
+.parent-box
+{
+    width:600px; height:40px; border: 2px solid rgb(212, 202, 202); opacity: 0.5; display: flex; justify-content: center; align-items: center; 
+}
+
+.child-box
+{
+    width:100%;  height:30px; display: flex; align-items: center; gap: 60px;
+}
+
+
+.grand-child-box 
+{
+  display: flex; gap:30px;
+}
+
+.grand-child-box > select
+{
+    border: none;
+}
+
+
+
+
+.child-box2
+{
+    width:100%;  height:30px; display: flex; align-items: center; gap: 20px;
+}
+
+/*    
+.grand-child-box > label{
+    z-index: 2;  font-size: 12px;
+} 
+
+
+
+.grand-child-box > select
+{
+     position: relative; right: 70px; height: 40px; border: none; font-weight: bolder; 
+}
+
+
+.grand-child-box > input
+{
+    border: none;  position: relative; left: -30px; z-index: 2;
+}
+ */
+
+
+.grand-child-box2
+{
+    display: flex; 
+}
+
+.child-box > select
+{
+    border: none; position: relative; 
+}
+
+.grand-child-box2 > input
+{
+    border: none;
+}
+
+.grand-child-box2 > label
+{
+
+    z-index: 2;  font-size: 12px; 
+
+}
+
+.grand-child-box2 > select
+{
+    border: none;
+}
+
+ */

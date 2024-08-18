@@ -1,0 +1,12 @@
+:root
+{
+    box-sizing: border-box; padding: 0px; margin: 0px;
+}
+    body
+    {
+        display: flex; justify-content: center; align-items: center; width:98vw; height: 96vh; 
+    }
+    .flexbox
+    {
+        width:100px; height:100px; background-color: rgb(10, 252, 10);
+    }

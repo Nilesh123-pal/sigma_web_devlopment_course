@@ -1,0 +1,135 @@
+html{
+    box-sizing: border-box; 
+}
+
+*
+{
+    box-sizing: inherit; padding: 0px; margin: 0px;  font-family: "Nunito", sans-serif;
+}
+
+body{
+    background-color: rgb(253, 253, 4); 
+} 
+
+.box
+{
+     display: flex; justify-content: center;  position: relative;  margin-top: 60px;  
+}
+
+.container
+{
+    background-color: rgb(231, 208, 208); width:650px; border: 2px solid; height: 400px; display: flex; flex-direction: column; border: none;
+}
+
+
+.header
+{
+    display: flex; justify-content: end; font-size: 1.5em; position: relative; top: 25px; right: 25px; cursor: pointer;
+}
+
+ .header img
+{
+    height: 25px;  top:11px; position: relative; 
+}
+
+.form-body
+{
+ display: flex; flex-direction: column; width: 70%; position: relative; top:80px; left: 150px; font-size: 1.2em;
+}
+
+label
+{
+  font-size: 15px; font-weight: bold;
+}
+
+button
+{
+padding: 2px 5px 2px 5px; border: none; font-size: 0.8em; border-style: groove;
+}
+
+button:hover
+{
+    background-color: rgb(173, 159, 159);
+}
+
+.form h5
+{
+    visibility: hidden;
+}
+
+
+.body h5
+{
+    visibility: hidden;
+}
+
+.form-body img{
+  position: relative; left:380px; bottom:30px;
+}
+
+.form-body h6{
+    font-size: 12.6px;
+}
+
+
+.form-body h5{
+    visibility: hidden;
+}
+
+  .img
+{
+    position: relative; bottom :90px; right: 65px;
+} 
+
+body h1
+{
+    margin-top: 40px; 
+}
+   
+@media screen and (max-width:640px) 
+{
+    body{
+        background-color: yellow; display: flex; flex-direction: column; justify-content: center;
+    } 
+
+    .container
+    {
+        width:300px; height: 500px; display: flex;
+    }
+
+
+    
+.form-body h6{
+    font-size: 10px;
+}
+
+.img
+{
+    position: relative; bottom :14px; right: 47px; height: 180px; width: 150px;
+} 
+
+
+label
+{
+    font-size: 14px;
+}
+
+button
+{
+padding: 2px 5px; border: none; font-size: 0.6em; border-style: groove; position: relative; right:70px
+}
+
+.form-body
+{
+ display: flex; flex-direction: column; width: 70%; position: relative; top:80px; left: 90px; font-size: 1.2em; 
+}
+
+.form-body img{
+    position: relative; left:100px; bottom:30px; 
+  }
+
+  .form-body h3{
+   font-size: 20px;text-align: left;
+  }
+
+}
