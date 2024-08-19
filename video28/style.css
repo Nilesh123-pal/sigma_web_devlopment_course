@@ -1,0 +1,10 @@
+*
+{
+ background-color: red;
+ color: black;
+}
+
+:root
+{
+    box-sizing: border-box;
+}
